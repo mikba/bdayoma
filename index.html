@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Slot-Machine Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background Layer -->
+  <div id="background" class="scene-layer full-screen">
+    <img src="images/background.png" alt="Background">
+  </div>
+
+  <!-- Start Screen Overlay -->
+  <div id="start-screen" class="scene-layer start-screen full-screen">
+    <img src="images/openingCard.png" id="click-to-begin" alt="Click to Begin">
+  </div>
+
+  <!-- Final Screen Overlay -->
+  <div id="final-screen" class="scene-layer final-screen full-screen hidden">
+    <img src="images/finalCard.png" id="click-to-restart" alt="Play Again">
+  </div>
+
+
+  <!-- Card Area -->
+  <div id="card-area" class="scene-layer">
+    <div class="top-row">
+      <div id="card-1" class="card-container card-top-left"></div>
+      <div id="card-2" class="card-container card-top-middle"></div>
+      <div id="card-3" class="card-container card-top-right"></div>
+    </div>
+    <div class="bottom-row">
+      <div id="card-4" class="card-container card-bottom-left"></div>
+      <div id="card-5" class="card-container card-bottom-right"></div>
+    </div>
+  </div>
+
+  <!-- Speech Bubble Overlay (above everything) -->
+  <div id="speech-bubble-overlay" class="scene-layer"></div>
+
+  <!-- Headmaster Character -->
+  <div id="headmaster" class="scene-layer character">
+    <img src="images/headmistressrightside.png" alt="Headmaster">
+    <div id="headmaster-speech-bubble" class="speech-bubble">
+      <img src="" alt="">
+    </div>
+  </div>
+
+  <!-- Cake Area -->
+  <div id="cake-area" class="scene-layer cake-container">
+    <img id="covered-cake" src="images/coveredCake.png" alt="Covered Cake">
+  </div>
+
+  <!-- Centered Cake (revealed in finale) -->
+  <img id="centered-cake" class="hidden" src="images/cake.png" alt="Birthday Cake">
+
+  <!-- Slot Machine -->
+  <div id="slot-machine" class="scene-layer slot-machine-container">
+    <!-- Background image of the machine -->
+    <img src="images/slotmachine.png" class="machine-background">
+
+    <!-- Foreground slot windows -->
+    <div class="slot-windows-container">
+      <div class="slot-window"><img id="reel-1" src="slot symbols/flower1.png" class="reel-image"></div>
+      <div class="slot-window"><img id="reel-2" src="slot symbols/flower2.png" class="reel-image"></div>
+      <div class="slot-window"><img id="reel-3" src="slot symbols/flower1.png" class="reel-image"></div>
+    </div>
+
+    <!-- Click blocker overlay (hidden by default) -->
+    <div id="slot-machine-blocker" class="slot-machine-blocker hidden"></div>
+  </div>
+
+  <!-- Dialogue Characters (Foreground) -->
+  <div id="dialogue-container" class="scene-layer dialogue-container hidden">
+    <div id="speaker-left" class="dialogue-character left"></div>
+    <div id="speaker-right" class="dialogue-character right"></div>
+  </div>
+
+  <!-- Monologue Character (Foreground, centered) -->
+  <div id="monologue-container" class="scene-layer monologue-container hidden">
+    <div id="monologue-speaker" class="monologue-character"></div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>

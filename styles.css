@@ -1,0 +1,402 @@
+/* ============================================
+   Birthday Slot-Machine Game - Styles
+   ============================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Scene Layers */
+.scene-layer {
+  position: absolute;
+}
+
+/* Background */
+#background {
+  z-index: 1;
+}
+
+#background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Start Screen */
+#start-screen {
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Full screen layers */
+.scene-layer.full-screen {
+  width: 100%;
+  height: 100%;
+}
+
+#click-to-begin {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Final Screen Overlay */
+#final-screen {
+  z-index: 200;
+}
+
+#click-to-restart {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Card Area - Top portion of scene */
+#card-area {
+  z-index: 2;
+  width: 100%;
+  height: 65%;
+  pointer-events: none; /* Clicks pass through */
+}
+
+/* Top Row */
+.top-row {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bottom-row {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card-container {
+  width: 210px;
+  height: auto;
+  position: relative;
+  background-color: transparent;
+}
+
+/* Card images - using background-image for proper sizing */
+.card-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Card 1 - Top Left, rotated -18 degrees */
+.card-top-left {
+  transform: translate(-100%, -0%) rotate(0deg);
+}
+
+/* Card 2 - Top Middle, rotated -9 degrees */
+.card-top-middle {
+  transform: translate(-40%, -0%) rotate(0deg);
+}
+
+/* Card 3 - Top Right, rotated 0 degrees */
+.card-top-right {
+  transform: translate(10%, -0%) rotate(0deg);
+}
+
+/* Card 4 - Bottom Left, rotated +9 degrees */
+.card-bottom-left {
+  transform: translate(-5%, 80%) rotate(0deg);
+}
+
+/* Card 5 - Bottom Right, rotated +18 degrees */
+.card-bottom-right {
+  transform: translate(15%, 80%) rotate(0deg);
+}
+
+/* Card States */
+.card-container .card-covered {
+  background-image: url('images/card-covered.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card-container .card-teased {
+  /* Partially covered image is set via img element */
+}
+
+.card-container .card-revealed {
+  /* Final revealed image - set dynamically */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Headmaster Character */
+#headmaster {
+  z-index: 3;
+  left: 5%;
+  top: 75%;
+  transform: translateY(-50%);
+}
+
+#headmaster img {
+  width: 250px;
+  height: auto;
+  display: block;
+}
+
+/* Speech Bubble - show PNG directly */
+#headmaster-speech-bubble {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+#headmaster-speech-bubble img {
+  width: auto;
+  height: 220px;
+  display: block;
+}
+
+/* Cake Area */
+#cake-area {
+  z-index: 2;
+  left: 73%;
+  top: 75%;
+  transform: translateY(-50%);
+}
+
+.cake-container img {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+
+/* Centered Cake - revealed in finale */
+#centered-cake {
+  z-index: 5;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: auto;
+  transition: transform 5s ease-in-out;
+}
+
+#centered-cake.scale-80 {
+  transform: translate(-50%, -50%) scale(0.8);
+}
+
+/* Slot Machine */
+#slot-machine {
+  z-index: 11;
+  left: 75%;
+  top: 25%;
+  cursor: pointer;
+}
+
+.slot-machine-container {
+  position: relative;
+  width: 400px;
+  height: 600px;
+}
+
+/* Background image of the slot machine外壳 */
+.machine-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+  display: block;
+  pointer-events: none; /* Allow clicks to pass through */
+}
+
+/* Foreground slot windows container */
+.slot-windows-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.slot-window {
+  position: absolute;
+  width: 80px;
+  height: 110px;
+  background: transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Position each reel vertically within the machine */
+.slot-window:nth-child(1) {
+  top: 80px;
+  left: 160px;
+}
+
+.slot-window:nth-child(2) {
+  top: 222px;
+  left: 160px;
+}
+
+.slot-window:nth-child(3) {
+  top: 362px;
+  left: 160px;
+}
+
+.reel-image {
+  width: auto;
+  height: 120px;
+  object-fit: contain;
+}
+
+/* Dialogue Container */
+#dialogue-container {
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 10%;
+  width: 80%;
+  left: 10%;
+}
+
+.dialogue-character {
+  width: 40%;
+  height: 80%;
+  position: relative;
+}
+
+.dialogue-character .dialogue-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.dialogue-character .dialogue-bubble-img {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  width: 100%;
+}
+
+.dialogue-character .dialogue-bubble-img-para {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+}
+
+.dialogue-character.left {
+  left: 0;
+}
+
+.dialogue-character.right {
+  right: 0;
+}
+
+/* Monologue Container - centered single speaker */
+.monologue-container {
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10%;
+  width: 80%;
+  left: 10%;
+}
+
+.monologue-character {
+  width: 60%;
+  height: 80%;
+  margin-left:20%;
+  position: relative;
+}
+
+.monologue-character .monologue-card-img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  display: block;
+}
+
+.monologue-character .monologue-bubble-img {
+  position: absolute;
+  top: 35%;
+  width: 80%;
+}
+
+/* Utility classes */
+.hidden {
+  display: none !important;
+}
+
+.dimmed {
+  opacity: 0.3;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Speech Bubble Overlay - above everything for high z-index */
+#speech-bubble-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.speech-bubble {
+  position: absolute;
+}
+
+/* Slot Machine Blocker Overlay */
+#slot-machine-blocker {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  cursor: default;
+}
+
+/* Hover effects */
+#slot-machine:hover .machine-background {
+  opacity: 0.95;
+}
+
+#slot-machine:hover {
+  cursor: pointer;
+}

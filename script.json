@@ -1,0 +1,245 @@
+{
+  "version": "1.0",
+  "script": [
+    {
+      "id": 1,
+      "type": "monologue",
+      "speaker": "headmaster",
+      "lines": [
+        {
+          "image": "headmastermono0a.png"
+        },
+        {
+          "image": "headmastermono0b.png"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "monologue",
+      "speaker": "headmaster",
+      "lines": [
+        {
+          "image": "headmastermono1.png"
+        }
+      ],
+      "stage": {
+        "slotImages": [
+          "flower1",
+          "flower1",
+          "flower1"
+        ],
+        "music": "jazz1.mp3"
+      }
+    },
+    {
+      "id": 4,
+      "type": "cardTease",
+      "stage": {
+        "slotImages": [
+          "opera",
+          "opera",
+          "opera"
+        ],
+        "sfx": "Curtain.mp3"
+      },
+      "card": 1,
+      "image": "operacloth.png"
+    },
+    {
+      "id": 8,
+      "type": "cardTease",
+      "stage": {
+        "slotImages": [
+          "explorer",
+          "explorer",
+          "explorer"
+        ],
+        "sfx": "Curtain.mp3"
+      },
+      "card": 2,
+      "image": "explorercloth.png"
+    },
+    {
+      "id": 9,
+      "type": "cardReveal",
+      "stage": {
+        "slotImages": [
+          "opera",
+          "opera",
+          "opera"
+        ],
+        "music": "revealsong.mp3"
+      },
+      "card": 1,
+      "image": "finaloperamaster.png"
+    },
+    {
+      "id": 18,
+      "type": "cardReveal",
+      "stage": {
+        "slotImages": [
+          "explorer",
+          "explorer",
+          "explorer"
+        ],
+        "music": "revealsong.mp3"
+      },
+      "card": 2,
+      "image": "finalmastertraveler.png"
+    },
+    {
+      "id": 21,
+      "type": "cardTease",
+      "stage": {
+        "slotImages": [
+          "cassandra",
+          "cassandra",
+          "cassandra"
+        ],
+        "sfx": "Curtain.mp3"
+      },
+      "card": 3,
+      "image": "cassandracloths.png"
+    },
+    {
+      "id": 32,
+      "type": "monologue",
+      "speaker": "opera",
+      "lines": [
+        {
+          "image": "monoopera1.png"
+        }
+      ],
+      "stage": {
+        "slotImages": [
+          "flower2",
+          "flower1",
+          "flower1"
+        ],
+        "sfx": "clock.mp3"
+      }
+    },
+    {
+      "id": 35,
+      "type": "cardReveal",
+      "stage": {
+        "slotImages": [
+          "cassandra",
+          "cassandra",
+          "cassandra"
+        ],
+        "music": "revealsong.mp3"
+      },
+      "card": 3,
+      "image": "finalMasterKassa.png"
+    },
+    {
+      "id": 38,
+      "type": "dialogue",
+      "stage": {
+        "slotImages": [
+          "explorer",
+          "flower1",
+          "cassandra"
+        ]
+      },
+      "lines": [
+        {
+          "speaker": "explorer",
+          "image": "cassandraexplorer1.png"
+        },
+        {
+          "speaker": "cassandra",
+          "image": "cassandraexplorer2a.png"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "type": "cardTease",
+      "stage": {
+        "slotImages": [
+          "wimbledon",
+          "wimbledon",
+          "wimbledon"
+        ],
+        "sfx": "Curtain.mp3"
+      },
+      "card": 4,
+      "image": "wimbledoncloth.png"
+    },
+    {
+      "id": 53,
+      "type": "cardReveal",
+      "stage": {
+        "slotImages": [
+          "wimbledon",
+          "wimbledon",
+          "wimbledon"
+        ],
+        "music": "revealsong.mp3"
+      },
+      "card": 4,
+      "image": "wimbledonmaster.png"
+    },
+    {
+      "id": 63,
+      "type": "cardTease",
+      "stage": {
+        "slotImages": [
+          "toadstool",
+          "toadstool",
+          "toadstool"
+        ],
+        "sfx": "Curtain.mp3"
+      },
+      "card": 5,
+      "image": "toadstoolcloths.png"
+    },
+    {
+      "id": 79,
+      "type": "cardReveal",
+      "stage": {
+        "slotImages": [
+          "toadstool",
+          "toadstool",
+          "toadstool"
+        ],
+        "music": "revealsong.mp3"
+      },
+      "card": 5,
+      "image": "finalMAstertoadstool.png"
+    },
+    {
+      "id": 135,
+      "type": "finale",
+      "lines": [
+        {
+          "speaker": "headmaster",
+          "image": "finalspeech1.png"
+        },
+        {
+          "speaker": "opera",
+          "image": "finalspeech2.png"
+        },
+        {
+          "speaker": "toadstool",
+          "image": "finalspeech3.png"
+        },
+        {
+          "speaker": "explorer",
+          "image": "finalspeech4.png"
+        },
+        {
+          "speaker": "cassandra",
+          "image": "finalspeech5.png"
+        },
+        {
+          "speaker": "wimbledon",
+          "image": "finalspeech6.png"
+        }
+      ]
+    }
+  ]
+}
