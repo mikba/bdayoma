@@ -155,7 +155,7 @@ html, body {
 #headmaster {
   z-index: 3;
   left: 5%;
-  top: 75%;
+  top: 70%;
   transform: translateY(-50%);
 }
 
@@ -214,7 +214,7 @@ html, body {
 #slot-machine {
   z-index: 11;
   left: 75%;
-  top: 25%;
+  top: 20%;
   cursor: pointer;
 }
 
