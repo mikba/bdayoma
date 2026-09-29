@@ -15,7 +15,7 @@ const ASSET_PATHS = {
   sounds: 'sounds/'
 };
 
-const constDialogTimeout = 2500;
+const constDialogTimeout = 2200;
 
 // ============================================
 // Asset Map - Maps symbolic names to filenames
@@ -649,7 +649,7 @@ const ScriptEngine = {
       SceneManager.blockSlotMachine(false);
     }, 3000);
 
-    await new Promise(resolve => setTimeout(resolve, 3500));
+    await new Promise(resolve => setTimeout(resolve, constDialogTimeout));
     // Unblock slot machine after full duration
     SceneManager.blockSlotMachine(false);
   },
@@ -834,7 +834,7 @@ const ScriptEngine = {
   },
 
   waitForTextDisplay() {
-    return new Promise(resolve => setTimeout(resolve, 6000));
+    return new Promise(resolve => setTimeout(resolve, constDialogTimeout));
   }
 };
 
