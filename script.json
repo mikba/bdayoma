@@ -7,6 +7,23 @@
       "speaker": "headmaster",
       "lines": [
         {
+          "image": "headmaster.png"
+        }
+      ],
+      "stage": {
+        "slotImages": [
+          "flower2",
+          "flower1",
+          "flower1"
+        ],
+        "sfx": "clock.mp3"
+      }
+    },{
+      "id": 2,
+      "type": "monologue",
+      "speaker": "headmaster",
+      "lines": [
+        {
           "image": "headmastermono0a.png"
         },
         {
@@ -15,7 +32,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "type": "monologue",
       "speaker": "headmaster",
       "lines": [
@@ -77,7 +94,7 @@
       }
     },
     {
-      "id": 8,
+      "id": 7,
       "type": "cardTease",
       "stage": {
         "slotImages": [
@@ -89,6 +106,23 @@
       },
       "card": 2,
       "image": "explorercloth.png"
+    },
+    {
+      "id": 8,
+      "type": "monologue",
+      "stage": {
+        "slotImages": [
+          "opera",
+          "opera",
+          "opera"
+        ]
+      },
+      "speaker": "opera",
+      "lines": [
+        {
+          "image": "opera.png"
+        }
+      ]
     },
     {
       "id": 9,
@@ -209,6 +243,23 @@
         ],
         "sfx": "clock.mp3"
       }
+    },
+    {
+      "id": 17.5,
+      "type": "monologue",
+      "stage": {
+        "slotImages": [
+          "explorer",
+          "explorer",
+          "explorer"
+        ]
+      },
+      "speaker": "explorer",
+      "lines": [
+        {
+          "image": "explorer.png"
+        }
+      ]
     },
     {
       "id": 18,
@@ -432,6 +483,23 @@
       "lines": [
         {
           "image": "explorermono2.png"
+        }
+      ]
+    },
+    {
+      "id": 34.5,
+      "type": "monologue",
+      "stage": {
+        "slotImages": [
+          "cassandra",
+          "cassandra",
+          "cassandra"
+        ]
+      },
+      "speaker": "cassandra",
+      "lines": [
+        {
+          "image": "cassandra.png"
         }
       ]
     },
@@ -713,6 +781,23 @@
         ],
         "sfx": "clock.mp3"
       }
+    },
+    {
+      "id": 52.5,
+      "type": "monologue",
+      "stage": {
+        "slotImages": [
+          "wimbledon",
+          "wimbledon",
+          "wimbledon"
+        ]
+      },
+      "speaker": "wimbledon",
+      "lines": [
+        {
+          "image": "wimbledon.png"
+        }
+      ]
     },
     {
       "id": 53,
@@ -1094,6 +1179,23 @@
         ],
         "sfx": "rain.mp3"
       }
+    },
+    {
+      "id": 78.5,
+      "type": "monologue",
+      "stage": {
+        "slotImages": [
+          "toadstool",
+          "toadstool",
+          "toadstool"
+        ]
+      },
+      "speaker": "toadstool",
+      "lines": [
+        {
+          "image": "toadstool.png"
+        }
+      ]
     },
     {
       "id": 79,
