@@ -15,7 +15,7 @@ const ASSET_PATHS = {
   sounds: 'sounds/'
 };
 
-const constDialogTimeout = 2700;
+const constDialogTimeout = 3200;
 
 // ============================================
 // Asset Map - Maps symbolic names to filenames
