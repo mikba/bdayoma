@@ -109,6 +109,20 @@
     },
     {
       "id": 8,
+      "type": "cardReveal",
+      "stage": {
+        "slotImages": [
+          "opera",
+          "opera",
+          "opera"
+        ],
+        "music": "revealsong.mp3"
+      },
+      "card": 1,
+      "image": "finaloperamaster.png"
+    },
+    {
+      "id": 9,
       "type": "monologue",
       "stage": {
         "slotImages": [
@@ -123,20 +137,6 @@
           "image": "opera.png"
         }
       ]
-    },
-    {
-      "id": 9,
-      "type": "cardReveal",
-      "stage": {
-        "slotImages": [
-          "opera",
-          "opera",
-          "opera"
-        ],
-        "music": "revealsong.mp3"
-      },
-      "card": 1,
-      "image": "finaloperamaster.png"
     },
     {
       "id": 10,
@@ -245,7 +245,7 @@
       }
     },
     {
-      "id": 17.5,
+      "id": 18.5,
       "type": "monologue",
       "stage": {
         "slotImages": [
@@ -487,7 +487,7 @@
       ]
     },
     {
-      "id": 34.5,
+      "id": 35.5,
       "type": "monologue",
       "stage": {
         "slotImages": [
@@ -783,7 +783,7 @@
       }
     },
     {
-      "id": 52.5,
+      "id": 53.5,
       "type": "monologue",
       "stage": {
         "slotImages": [
@@ -1181,7 +1181,7 @@
       }
     },
     {
-      "id": 78.5,
+      "id": 79.5,
       "type": "monologue",
       "stage": {
         "slotImages": [
